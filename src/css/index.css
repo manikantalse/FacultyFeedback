@@ -55,3 +55,8 @@ body{
     
     width: 100%;
 }
+
+.table-inverse {
+    color: #fff;
+    background-color: #292b2c;
+}

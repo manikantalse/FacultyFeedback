@@ -16,7 +16,7 @@
     <?php
     function getSubject($id) {
         include 'connect.php';    
-        $sql = "SELECT subject FROM `2-1-cse-subjects` WHERE id=".$id;
+        $sql = "SELECT subject FROM `subjects` WHERE id=".$id;
         $result = $conn->query($sql);
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
@@ -29,7 +29,7 @@
 
     function getFaculty($id) {
         include 'connect.php';    
-        $sql = "SELECT faculty FROM `2-1-cse-subjects` WHERE id=".$id;
+        $sql = "SELECT faculty FROM `subjects` WHERE id=".$id;
         $result = $conn->query($sql);
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
@@ -483,7 +483,7 @@
     </div>
     <?php
     include 'connect.php';
-        $sql = "CREATE TABLE IF NOT EXISTS `feedback`.`2-1-cse-subjects` ( `id` INT(4) NOT NULL AUTO_INCREMENT , `subject` CHAR(10) NOT NULL , `faculty` CHAR(10) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB";
+        $sql = "CREATE TABLE IF NOT EXISTS `feedback`.`subjects` ( `id` INT(4) NOT NULL AUTO_INCREMENT , `subject` CHAR(10) NOT NULL , `faculty` CHAR(10) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB";
         $conn->close();
     ?>
     <script>
