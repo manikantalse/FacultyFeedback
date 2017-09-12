@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>AVNIET server</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="src/css/flat-ui.css">
+    <link rel="stylesheet" href="src/css/index.css">
+    <script src="lib/jquery/jquery.js"></script>
+
+    <script src="lib/bootstrap/bootstrap.js"></script>
+</head>
+
+<body>
+    <header id="top">
+        <div class="contents">
+            <div id='AVN'>AVN Institute Of Engineering And Technology</div>
+        </div>
+        <img id='avnimg' src='images/avn.jpg' />
+    </header>
+
+    <div id="middle">
+        <h4 class="text-center" >Student Account LogIn</h4>
+        <center>
+        <form  id='login' method='post' action='feedback.php' >
+            <div class="form-group">
+                <div  class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input id="IDNO" type="text" class="form-control" name="user" placeholder="ID Number">
+                </div>
+                <div class="input-group" style="margin-top:10px;">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                    <input id="pass" type="password" class="form-control" name="pass" placeholder="Password">
+                </div>
+            </div>
+            <input type="hidden" name="branch" id='branch' value="<?php echo getRollNo();?>"/>
+            <input type="hidden" name="year" id='year' value=""/>
+            <input type="hidden" name="section" id='section' value=""/>
+            <button id='sub' type="submit" onclick="setValues(document.getElementById('IDNO').value)" class="btn btn-primary btn-lg btn-block">Login</button>
+        </form>
+        </center>
+
+      
+
+
+
+
+    </div>
+
+    <footer id="bottom">This is a private server and hence can only be accessed here</footerv>
+        <script src='src/js/index.js'></script>
+</body>
+
+</html>

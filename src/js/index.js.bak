@@ -1,0 +1,3 @@
+function goToFeed(){
+	$.get('feedback.php?q='+document.getElementById('IDNO').value);
+}

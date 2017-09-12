@@ -1,0 +1,30 @@
+body{
+    background: #ecf0f1;
+}
+
+#layout{
+    background: #eff0f2;
+    
+}
+
+.rating{
+    max-width: 70px;
+    
+}
+
+
+
+td{
+  word-wrap: break-word;max-width:50px;
+}
+
+#userLogStatus{
+    position: absolute;
+    top: 10px;
+    right: 10px; 
+}
+
+.mydropdown{
+    border: 1px solid gray;
+    cursor: pointer;
+}
