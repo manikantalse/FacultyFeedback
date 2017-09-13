@@ -189,7 +189,7 @@ CREATE TABLE `subjects` (
 --
 
 INSERT INTO `subjects` (`id`, `subject`, `faculty`) VALUES
-(1, 'oops', 'daya'),
+(1, 'oops', 'dayakar'),
 (2, 'c++', 'faculty2'),
 (3, 'm-iv', 'faculty3'),
 (4, 'dld', 'faculty4'),
