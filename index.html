@@ -18,7 +18,7 @@
 <body>
     <header id="top">
         <div class="contents">
-            <div id='AVN'>AVN Institute Of Engineering And Technology</div>
+            <center><div id='AVN'>AVN Institute Of Engineering And Technology</div></center>
         </div>
         <img id='avnimg' src='images/avn.jpg' />
     </header>
@@ -32,12 +32,12 @@
                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                     <input id="IDNO" type="text" class="form-control" name="user" placeholder="ID Number">
                 </div>
-                <span id="rollError" style="color:red" hidden>please enter your roll number</span>
+                <span id="rollError" style="color:red" hidden>Please enter your roll number</span>
                 <div class="input-group" style="margin-top:10px;">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
                     <input id="pass" type="password" class="form-control" name="pass" placeholder="Password">
                 </div>
-                <span id="passError" style="color:red" hidden>either password or username is wrong</span>
+                <span id="passError" style="color:red" hidden>Either your username or password is wrong</span>
             </div>
             <input type="hidden" name="branch" id='branch' value="<?php echo getRollNo();?>"/>
             <input type="hidden" name="year" id='year' value=""/>
@@ -46,7 +46,7 @@
         </form>
         </center>
     </div>
-    <footer id="bottom">This is a private server and hence can only be accessed here</footerv>
+    <footer id="bottom"><center>This is a private server and hence can only be accessed here</center></footer>
         <script src='src/js/index.js'></script>
 </body>
 
