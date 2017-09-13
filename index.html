@@ -32,10 +32,12 @@
                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                     <input id="IDNO" type="text" class="form-control" name="user" placeholder="ID Number">
                 </div>
+                <span id="rollError" style="color:red" hidden>please enter your roll number</span>
                 <div class="input-group" style="margin-top:10px;">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
                     <input id="pass" type="password" class="form-control" name="pass" placeholder="Password">
                 </div>
+                <span id="passError" style="color:red" hidden>either password or username is wrong</span>
             </div>
             <input type="hidden" name="branch" id='branch' value="<?php echo getRollNo();?>"/>
             <input type="hidden" name="year" id='year' value=""/>

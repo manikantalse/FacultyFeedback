@@ -14,7 +14,12 @@
     <script src="lib/bootstrap/bootstrap.js"></script>
 
     <?php
+
     function getSubject($id) {
+        if( !isset($_REQUEST['user']) )
+        {
+            echo "<script>window.top.location='index.html'</script>";
+        }
         include 'connect.php';    
         $sql = "SELECT subject FROM `subjects` WHERE id=".$id;
         $result = $conn->query($sql);
@@ -41,7 +46,10 @@
     }
     
     function getRollNo(){
-        return $_REQUEST['user'];
+        
+            if(isset($_REQUEST['user'])){
+                return $_REQUEST['user'];
+            }
     }
 
     function getBranch(){
