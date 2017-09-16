@@ -23,7 +23,6 @@ function getRating($columnName, $facultyName) {
     return round($row["AVG($columnName)"],1);
 }
 
-
 ?>
 
 <!DOCTYPE html>
