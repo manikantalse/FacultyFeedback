@@ -72,13 +72,16 @@
                 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><?php echo getRollNo() ?>
                 <span class="caret"></span></button>
                 <ul class="dropdown-menu dropdown-menu-right mydropdown">
-                    <li><a>Change Password</a></li>
+                    <li onclick='changePassword();' ><a>Change Password</a></li>
                     <li onclick="logout()" ><a>Log Out</a></li>
                 </ul>
             </div>
         </h3>
         </br>
         <div id='layout'>
+            <form id='hiddenForm' method='post' action='changePassword.php' >
+                <input type="hidden" id='idno' name="rollno" value="<?php echo getRollNo();?>"/>
+            </form>
             <form action="feed.php" method='post'>
             
             <input type="hidden" name="sub1" value="<?php echo getSubject(1);?>"/>
@@ -497,6 +500,10 @@
     <script>
         function logout(){
             this.top.location = 'index.html'
+        }
+
+        function changePassword(){
+            document.getElementById('hiddenForm').submit();
         }
     </script>
 </body>

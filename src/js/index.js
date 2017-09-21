@@ -47,10 +47,12 @@ $(document).ready(function () {
                 login.submit();
             } else {
                 if ($('#IDNO').val() == '') {
-                    $('#rollError').show();
+                    $('#rollError').hide();
+                    $('#rollError').show(250);
                 } else {
                     $('#rollError').hide();
-                    $('#passError').show();
+                    $('#passError').hide();
+                    $('#passError').show(250);
                 }
             }
         })
